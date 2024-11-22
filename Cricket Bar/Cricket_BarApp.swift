@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Cricket_BarApp: App {
+
+    @StateObject private var viewModel = CricketScoreViewModel()
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra {
+            ContentView(viewModel: viewModel)
+        } label: {
+            MenuBarView(score: viewModel.cricketScore?.livescore ?? "Loading...")
         }
+            .menuBarExtraStyle(.window)
     }
 }

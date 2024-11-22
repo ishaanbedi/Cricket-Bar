@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct MenuBarView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let score: String
 
-#Preview {
-    MenuBarView()
+    var body: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "cricket.ball.fill")
+            Text(score)
+                .font(.system(size: 12))
+        }
+    }
 }

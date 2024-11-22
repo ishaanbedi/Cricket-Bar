@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct BowlerRow: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let name: String
+    let overs: String
+    let runs: String
+    let wickets: String
+    let economy: String
 
-#Preview {
-    BowlerRow()
+    var body: some View {
+        HStack {
+            Text(name)
+                .frame(width: 100, alignment: .leading)
+            Text("\(overs)-\(runs)-\(wickets)")
+            Spacer()
+            Text("Eco: \(economy)")
+        }
+            .font(.system(.body, design: .monospaced))
+    }
 }

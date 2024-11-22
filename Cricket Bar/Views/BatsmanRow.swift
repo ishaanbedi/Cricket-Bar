@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct BatsmanRow: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let name: String
+    let runs: String
+    let balls: String
+    let strikeRate: String
 
-#Preview {
-    BatsmanRow()
+    var body: some View {
+        HStack {
+            Text(name)
+                .frame(width: 100, alignment: .leading)
+            Text(runs)
+            Text(balls)
+            Spacer()
+            Text("SR: \(strikeRate)")
+        }
+            .font(.system(.body, design: .monospaced))
+    }
 }
