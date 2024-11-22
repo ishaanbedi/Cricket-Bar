@@ -2,9 +2,14 @@
 
 macOS application to display live cricket scores in the menu bar.
 
+<img width="459" alt="SC1" src="https://github.com/user-attachments/assets/4b848b3d-43b4-46c5-8219-973471dab435">
+
+<img width="459" alt="SC2 2" src="https://github.com/user-attachments/assets/4ace3caf-e8dd-440e-ab45-2fe2b30c4ff0">
+
+
 ### Installation
 
-Download the dmg file from the [releases] folder and install the app.
+Download the dmg file from the [releases](https://github.com/ishaanbedi/Cricket-Bar/releases/tag/v1) folder and install the app.
 
 ### Change Match
 
